@@ -37,8 +37,10 @@
         var lucrominserv = lucroporminuto / servers
         var prejuservidor = (lucrominserv * downservers) * downtime
         var prejuizo = lucroporminuto * downtime
-        var mitigado1 = prejuizo * 0.7
-        var mitigado2 = prejuizo * 0.3
-        msgDowntime.innerHTML = `<br><h3>Durante o periodo de ${downtime} minutos seu prejuizo nos seus ${downservers} servidores caidos foi de R$${(lucrominserv * downtime).toFixed(2)} cada um, e de R$${prejuservidor.toFixed(2)} no total</h3><h3>Com ajuda do nosso monitoramento podemos mitigar sua perda de 30% a 70% e o prejuízo do exemplo acima cairia para um valor entre R$${mitigado2.toFixed(2)} e R$${mitigado1.toFixed(2)} </h3>`
+        var mitigado1 = prejuservidor * 0.7
+        var mitigado2 = prejuservidor * 0.3
+        msgDowntime.innerHTML = `<br><h3>Durante o periodo de ${downtime} minutos seu prejuizo nos seus ${downservers} servidores caidos foi de R$${(lucrominserv * downtime).toFixed(2)}
+             cada um, e de R$${prejuservidor.toFixed(2)} no total</h3><h3>Com ajuda do nosso monitoramento podemos mitigar sua perda de 30% a 70% e o prejuízo do exemplo acima cairia
+                 para um valor entre R$${mitigado2.toFixed(2)} e R$${mitigado1.toFixed(2)} </h3>`
     }
 </script>
