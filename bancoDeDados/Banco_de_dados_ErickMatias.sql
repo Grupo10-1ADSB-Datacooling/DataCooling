@@ -23,14 +23,14 @@ senhaAfiliado VARCHAR(20) NOT NULL
 CREATE TABLE sensor (
 idSensor INT PRIMARY KEY AUTO_INCREMENT,
 tipoSensor CHAR(5), CONSTRAINT chkTipoSensor CHECK (tipoSensor IN('DHT11')),
-empresaSensor VARCHAR(80), -- FOREIGN KEY
+empresaSensor VARCHAR(80),
 setorDeAlocação CHAR(2),
 statusSensor VARCHAR(15), CONSTRAINT chkStatusSensor CHECK (statusSensor IN ('ativo', 'inativo', 'manutenção'))
 );
 
 CREATE TABLE dados (
 idDados INT PRIMARY KEY AUTO_INCREMENT,
-idSensor INT, -- FOREIGN KEY
+idSensor INT,
 temperatura DOUBLE,
 umidade DOUBLE,
 medMinuto DATETIME
