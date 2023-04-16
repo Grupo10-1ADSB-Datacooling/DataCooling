@@ -1,59 +1,62 @@
 function alterarCampos() {
+    
     // Alterando as informações da Razão Social
 
-        // Alterando o id do título da razão social
-        title_razaoSocial.id = "title_cnpj";
-        // Alterando o texto do título
-        title_cnpj.innerHTML = "CNPJ";
+        // Selecionando o elemento HTML com o id title_razaoSocial
+        var titleCnpj = document.getElementById("title_razaoSocial");
+        // Alterando o conteúdo HTML do elemento
+        titleCnpj.innerHTML = "CNPJ";
+        // Selecionando o elemento HTML com o id ipt_razaoSocial
+        var inputCnpj = document.getElementById("ipt_razaoSocial");
+        // Alterando o id do elemento INPUT
+        inputCnpj.id = "ipt_cnpj";
+        // Alterando o type do elemento INPUT
+        inputCnpj.type = "text";
+        // Alterando a placeholder do elemento INPUT
+        inputCnpj.placeholder = "00.000.000/0001-00"; 
+    
+    // Alterando as informações do Email
+
+        // Selecionando o elemento HTML com o id title_email
+        var titleCep = document.getElementById("title_email");
+        // Alterando o conteúdo HTML do elemento
+        titleCep.innerHTML = "CEP da Empresa";
+        // Selecionando o elemento HTML com o id ipt_email
+        var inputCep = document.getElementById("ipt_email");
         // Alterando o id da input
-        ipt_razaoSocial.id = "ipt_cnpj"; 
+        inputCep.id = "ipt_cep"; 
         // Alterando o type da input
-        ipt_cnpj.type = "text"
+        inputCep.type = "text"
         // Alterando a placeholder
-        ipt_cnpj.placeholder = "00.000.000/0001-00"; 
-    
-    ////////////////////////////////////////////////////////////////
+        inputCep.placeholder = "00000-000"; 
+                
+    // Alterando as informações da Senha
 
-        // Alterando as informações do Email
-    
-            // Alterando o id do título do Email
-            title_email.id = "title_cep";
-            // Alterando o texto do título
-            title_cep.innerHTML = "CEP da Empresa";
-            // Alterando o id da input
-            ipt_email.id = "ipt_cep"; 
-            // Alterando o type da input
-            ipt_cep.type = "text"
-            // Alterando a placeholder
-            ipt_cep.placeholder = "00000-000"; 
-        
-    ////////////////////////////////////////////////////////////////
-        
-        // Alterando as informações da Senha
-    
-            // Alterando o id do título da Senha
-            title_senha.id = "title_telFixo";
-            // Alterando o texto do título
-            title_telFixo.innerHTML = "Telefone Fixo";
-            // Alterando o id da input
-            ipt_senha.id = "ipt_telFixo"; 
-            // Alterando o type da input
-            ipt_telFixo.type = "text"
-            // Alterando a placeholder
-            ipt_telFixo.placeholder = "11 0000-0000"; 
+        // Selecionando o elemento HTML com o id title_senha
+        var titleTelFixo = document.getElementById("title_senha");
+        // Alterando o conteúdo HTML do elemento
+        titleTelFixo.innerHTML = "Telefone Fixo";
+        // Selecionando o elemento HTML com o id title_senha
+        var inputTelFixo = document.getElementById("ipt_senha");
+        // Alterando o id da input do elemento INPUT
+        inputTelFixo.id = "ipt_telFixo"; 
+        // Alterando o type da input do elemento INPUT
+        inputTelFixo.type = "text"
+        // Alterando a placeholder do elemento INPUT
+        inputTelFixo.placeholder = "11 0000-0000"; 
 
-    ////////////////////////////////////////////////////////////////
+    // Alterando as informações do botão Continuar
 
-        // Alterando as informações do botão Continuar
-
-            // Alterando o id do botão
-            btn_continuar.id = "btn_cadastrar";
-            // Alterando o conteúdo html do botão
-            btn_cadastrar.innerText = "Cadastrar";
-            // Alterando a função do onclick
-            btn_cadastrar.onclick = "cadastrarEmpresa()";
-
-
+        // Selecionando o elemento HTML com o id title_senha
+        var buttonCadastrar = document.getElementById("btn_continuar");
+        // Alterando o id do elemento HTML
+        buttonCadastrar.id = "btn_cadastrar"
+        // Alterando o conteúdo HTML do elemento
+        buttonCadastrar.textContent = "Cadastrar"; 
+        // Limpando onclick do elemento HTML
+        buttonCadastrar.onclick = function cadastrarEmpresa(){
+            alert("Deu certo!");
+        };
 }
 
 function exibirCadastroParte2() {
@@ -62,6 +65,9 @@ function exibirCadastroParte2() {
     var senha = ipt_senha.value;
 
     alterarCampos();
-
 }
+
+
+
+
 
