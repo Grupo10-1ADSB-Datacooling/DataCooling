@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.CSS">
     <title>Tela inicial</title>
 </head>
 <body>
@@ -16,7 +16,8 @@
             <a>Contato</a>
             <a>Simular</a>
         </nav>
-        <img class="exitIcon" src="./img/EXIT-ICON.png" alt="">
+        <a href="#" onclick="toggle()"><img class="exitIcon" src="./img/EXIT-ICON.png" alt="" id="mareaTurbo"></a>
+        <a href="planos-title"></a>
     </header>
 
     <main>
@@ -263,11 +264,12 @@
         </div>
 
         <div class="suport">
-            <h1 class="suport-title">SUPORTE</h1>
+            <h1 class="suport-title">CONTATO</h1>
             <div class="suport-content">
-                <img src="./img/profile-icon.png" alt=""><input type="text" name="text" class="input" placeholder="seu nome"><br>
-                <img src="./img/email-icon.png" alt=""><input type="text" name="text" class="input" placeholder="seu email"><br>
-                <img src="./img/question-icon.png" alt=""><input type="text" name="text" class="input" placeholder="sua duvida">
+                <input type="text" name="text" class="input_s" placeholder="Nome."><br>
+                <input type="text" name="text" class="input_s" placeholder="Email."><br>
+                <input type="text" name="text" class="input_s" id="mande_mensagem" placeholder="Mande uma mensagem para nós.">
+                <button onclick="">Enviar</button>
             </div>
         </div>
 

@@ -7,6 +7,7 @@
     text-decoration: none;
 }
 
+
 body {
     font-size: 100;
     background-color: #E0FFFC;
@@ -259,6 +260,9 @@ main div .button-vamos-la {
     margin-top: 15vh;
     font-family: Nunito Sans;
     color: #40E0D0; 
+    text-align: center
+    
+       
 }
 
 .box {
@@ -472,15 +476,44 @@ main div .button-vamos-la {
     color: #40E0D0;
 }
 
-.input {
+.input_s {
     border: none;
+    margin-left: -30vh;
+    width: 40vh;
     padding: 1rem;
     border-radius: 1rem;
     background: #e8e8e8;
-    box-shadow: 20px 20px 60px #c5c5c5,
-           -20px -20px 60px #ffffff;
+    box-shadow: 2px 2px 4px #c5c5c5,
+           -2px -2px 6px #ffffff;
     transition: 0.3s;
-   }
+}
+
+#mande_mensagem{
+    height: 20vh;
+    width: 70vh;
+    margin-left: 0vh;
+    padding-bottom: 15vh;
+}
+
+
+.suport-content button {
+    margin-left: 0;
+    font-family: Poppins;
+    font-weight: bold;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    border: #000 0px solid;
+    border-radius: 5px;
+    width: 25vh;
+    height: 35px;
+    background-color: #40E0D0;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.suport-content button:hover {
+    background-color: #4A91A1;
+    cursor: pointer; 
+}
 
 .suport-content {
     display: flex;
@@ -545,9 +578,4 @@ main div .button-vamos-la {
     padding: 0;
     width: 100%;
 }
-
-
-
-
-
 
