@@ -1,168 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap%27');
-body {
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Poppins';
     margin: 0;
     padding: 0;
-    background-color: white;
 }
-.header {
-    border-bottom: 3px solid #40E0D0;
-    display: flex;
-    width: auto;
-    margin: auto;
-    background-color: #40E0D0;
-    height: 100px;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
-}
-.navbar {
+
+
+.container{
     width: 100%;
-    display: flex;
-    align-items: center;
-    list-style: none;
-    color: #000;
-    font-family: Poppins;
-}
-.navbar h2 {
-    margin: 30px;
-    padding: 10px;
-}
-h2 {
-    color: #000;
-    text-decoration: none;
-    transition: all 0.75s ease;
-  }
-  
-  h2:hover {
-    margin: 0;
-    padding: 0;
-    color: #000;
-    text-decoration: none;
-    border-bottom: 2px solid #D9D9D9;
-  }
-.logo {
-    width: 100px;
-    width: fit-content;
-    
-}
-.navlink {
-    display: flex;
-    justify-content: center;
-}
-.butãozinho {
-    display: flex;
-    flex-direction: column;
-    margin-left: 5vh;
-}
-.butãozinho button {
-    font-family: Poppins;
-    font-weight: bold;
-    margin: 8px;
-    border: #000 2px solid;
-    border-radius: 15px;
-    width: 145px;
-    height: 35px;
-    background-color: #40E0D0;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);   
-}
-.container {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 260px;
 }
-.container #Login {
+
+.container .content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content .card-sign-up{
+    width: 50%;
+    height: 100vh;
+    background-color: #232323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content .card-sign-up .content-sign-up{
+    width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    background-color: #4A91A1;
-    position: absolute;
-    padding: 60px;
-    border-radius: 20px;
-    font-family: Poppins;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    gap: 3vh;
 }
-#Login button {
-    font-family: Poppins;
-    font-weight: bold;
-    margin: 0 auto;
-    margin-top: 10px;
-    border: #000 2px solid;
-    border-radius: 5px;
+
+.container .content .card-sign-up .sign-up-informations{
     width: 100%;
-    height: 35px;
-    background-color: #40E0D0;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 1.5vh;
 }
-button:hover {
-    background-color: #4A91A1;
+
+.container .content .card-sign-up .sign-up-informations .informations-title{
+    font-weight: 600;
+    font-size: 2vw;
+    width: 45%;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(64, 224, 208, 0.15);
+    color: #40E0D0;
+}
+.container .content .card-sign-up .sign-up-informations .informations-text{
+    width: 45%;
+    font-size: 1vw;
+    font-weight: 100;
+    color: #CFCFCF;
+}
+
+.container .content .card-sign-up .form-sign-up{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 3vh;
+}
+
+.container .content .card-sign-up .form-sign-up .form-item{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+} 
+
+.container .content .card-sign-up .form-sign-up .form-item .form-title{
+    font-size: 1vw;
+    font-weight: 200;
+    text-shadow: 0px 4px 4px rgba(64, 224, 208, 0.15);
+    color:  #40E0D0;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+} 
+
+.container .content .card-sign-up .form-sign-up .form-item .form-input{
+    margin-top: 1.5vh;
+    width: 89%;
+    height: 5vh;
+    background-color: #393939;
+    border: none;
+    border-radius: 0.5vw;
+    font-size: 0.8vw;
+    font-weight: 200;
+    color: #C3C3C3;
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.245);
+    padding-left: 2.5vh;
+} 
+
+/* Estilização do placeholder*/
+.container .content .card-sign-up .form-sign-up .form-item .form-input::-webkit-input-placeholder{
+    font-size: 0.8vw;
+    font-weight: 200;
+    color: #C3C3C3;
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.245);
+}
+
+.container .content .card-sign-up .form-sign-up .form-item .form-button{
     cursor: pointer;
+    margin-top: 3vh;
+    width: 95%;
+    height: 5vh;
+    background-color: #37C1CA;
+    border: none;
+    border-radius: 0.5vw;
+    font-size: 0.85vw;
+    font-weight: 500;
+    color: white;
+    transition: all 0.3s ease-in-out;
+
+} 
+
+.container .content .card-sign-up .form-sign-up .form-item .form-button:hover{
+    background-color: #000;
 }
- #Login h3{
-    display: flex;
-}
-#Login input {
-    border: #000 1px solid;
-    border-radius: 10px;
-    background-color: #D9D9D9;
-    padding: 10px;
-    outline: none;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
-}
-#Login #quadradin {
-    margin: -10px;
-    width: 200px;
-}
-span {
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
-    list-style: none;
-}
-.footer {
-    border-bottom: 3px solid #40E0D0;
-    width: auto;
-    margin: auto;
-    background-color: #40E0D0;
-    height: 100%;
-    font-family: Poppins, sans-serif;
-    font-weight: bold;
-    box-shadow: 4px 4px 6px 8px rgba(0, 0, 0, 0.4);  
-}
-.footer #slogan {
-    margin: 0;
-    padding: 10vh;
-    font-size: 250%;
-    height: 0;   
-}
-.footer #links {
-    list-style: none;
-    margin-top: 10%;
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    color: #ffff;
-}
-.footer #copyright{
-    margin-left: 30%;
-    margin-bottom: 2%;
-    color: #D9D9D9;   
-}
-.footer #redesSociais {
-    padding-left: 80%;
-    margin-top: -10vh;
-    font-size: 250%;
-    color: #D9D9D9;
-}
-.footer #politicasEtermos {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-left: 75%;
-    margin-bottom: 2%;
-    color: #D9D9D9;
-}
-.footer #redeImg {
-    margin: 0;
-    padding: 0;
+
+.container .content .card-sign-up .redirect{
+    margin-top: 3vh;
     width: 100%;
+    font-weight: 300;
+    font-size: 0.7vw;
+    letter-spacing: 0.02em;
+    color: rgba(255,255,255,0.9);
+    text-align: center;
 }
 
+.container .content .card-sign-up .redirect{
+    margin-top: 3vh;
+    width: 100%;
+    font-weight: 300;
+    font-size: 0.7vw;
+    letter-spacing: 0.02em;
+    color: rgba(255,255,255,0.9);
+    text-align: center;
+}
 
-    
+.container .content .card-sign-up .redirect a{
+    color: #37C1CA;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+}
+
+.container .content .card-sign-up .redirect a:hover{
+    text-decoration: underline;
+}
+
+.container .content .card-data-cooling{
+    width: 50%;
+    height: 100vh;
+    background-color: #37C1CA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content .card-data-cooling .data-cooling-text{
+    width: 50%;
+    font-size: 5vw;
+    text-transform: uppercase;
+    line-height: 5vw;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.24);
+}
+
+h1{
+    font-family: 'Nunito Sans';
+    font-weight: 700;
+}
