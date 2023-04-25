@@ -1,62 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Institucional</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="style.CSS">
+    <title> Login - DataCooling</title>
 </head>
 <body>
-    <div class="header">     
-        <img class="logo" src="./thumbnail_image1-removebg-preview.png" alt="">
-        <div class="navbar">
-                <h2>Início</h2>
-                <h2>Objetivo</h2>
-                <h2>Planos</h2>
-                <h2>Contato</h2>
-                <h2>Simulações</h2>
-            <div class="butãozinho">
-                <button>Criar conta</button>
-                <button>LOG-IN</button>
+    <div class="container"> 
+        <div class="content">
+            <div class="card-sign-up">
+                <div class="content-sign-up">
+                    <div class="sign-up-informations">
+                        <h1 class="informations-title"> LOGIN </h1>
+                        <span class="informations-text">
+                            Seja bem-vindo, faça o login para ter acesso aos nossos serviços.
+                        </span>
+                    </div>
+                    <div class="form-sign-up">
+                        <div class="form-item">
+                            <h4 class="form-title" id="title_email"> Email </h4>
+                            <input class="form-input" id="ipt_email" type="email" placeholder="Insira o seu email">
+                        </div>
+                        <div class="form-item">
+                            <h4 class="form-title" id="title_senha"> Senha </h4>
+                            <input class="form-input" id="ipt_senha" type="password" placeholder="Insira a sua senha">
+                        </div>
+                        
+                        <div class="form-item">
+
+                            <button class="form-button" id="btn_continuar" onclick="exibirCadastroParte2()"> Entrar </button>
+                        </div>
+                    </div>
+                    <div class="redirect">
+                        Não possui uma conta? <a href="../Login/index.html"> Cadastre-se </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-data-cooling">
+                <h1 class="data-cooling-text"> 
+                    Data Cooling
+                </h1>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div id="Login">
-            <h3>LOG-IN</h3>
-            <input type="text" placeholder="Email" id="quadradin"><br><br>
-            <input type="password" placeholder="Senha" id="quadradin"><br><br>
-            <span>
-                <li>Lembrar-me <input type="checkbox"></li>
-                <li>Esqueceu a senha?</li>
-            </span>
-            <div>
-            <button>LOG-IN</button>
-            </div>
-        </div>
-        <div id="outro"></div>
-    </div>
-    <div class="footer">
-        <div id="slogan">Helping you make<br>your data center<br>look cooler!</div>
-        <div id="redesSociais">
-            NOSSAS<br>REDES<br>SOCIAIS <br>
-            <img src="./Design_sem_nome-removebg.png" alt="" id="redeImg">
-        </div>
-        <ul id="links">
-            <li style="height: 10px;">Home</li><br>
-            <li style="height: 10px;">Projeto</li><br>
-            <li style="height: 10px;">Planos</li><br>
-            <li style="height: 10px;">Integrantes</li><br>
-            <li style="height: 10px;">Contato</li><br>
-        </ul>
-        <div id="politicasEtermos">
-            Politicas de reembolso<br>
-            Termos de condições de uso 
-        </div>
-        <div>
-            <span id="copyright">2023 © DataCooling - CAB - TODOS OS DIREITOS RESERVADOS</span>
-        </div>
 </body>
 </html>
