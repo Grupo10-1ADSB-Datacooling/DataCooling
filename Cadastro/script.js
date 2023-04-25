@@ -1,4 +1,16 @@
+var razaoSocial = "";
+var email = "";
+var senha = "";
+var cnpj = "";
+var cep = "";
+var telefoneFixo = "";
+
 function alterarCampos() {
+
+    // Armazenando os valores das inputs
+    razaoSocial = ipt_razaoSocial.value; 
+    email = ipt_email.value; 
+    senha = ipt_senha.value; 
     
     // Alterando as informações da Razão Social
 
@@ -12,6 +24,8 @@ function alterarCampos() {
         inputCnpj.id = "ipt_cnpj";
         // Alterando o type do elemento INPUT
         inputCnpj.type = "text";
+        // Limpando os valores do elemento INPUT
+        inputCnpj.value = "";
         // Alterando a placeholder do elemento INPUT
         inputCnpj.placeholder = "00.000.000/0001-00"; 
     
@@ -27,6 +41,8 @@ function alterarCampos() {
         inputCep.id = "ipt_cep"; 
         // Alterando o type da input
         inputCep.type = "text"
+        // Limpando os valores do elemento INPUT
+        inputCep.value = "";
         // Alterando a placeholder
         inputCep.placeholder = "00000-000"; 
                 
@@ -42,6 +58,8 @@ function alterarCampos() {
         inputTelFixo.id = "ipt_telFixo"; 
         // Alterando o type da input do elemento INPUT
         inputTelFixo.type = "text"
+        // Limpando os valores do elemento INPUT
+        inputTelFixo.value = "";
         // Alterando a placeholder do elemento INPUT
         inputTelFixo.placeholder = "11 0000-0000"; 
 
@@ -55,7 +73,11 @@ function alterarCampos() {
         buttonCadastrar.textContent = "Cadastrar"; 
         // Limpando onclick do elemento HTML
         buttonCadastrar.onclick = function cadastrarEmpresa(){
-            alert("Deu certo!");
+            cnpj = ipt_cnpj.value;
+            cep = ipt_cep.value;
+            telefoneFixo = ipt_telFixo.value;
+
+            window.location.href = "./../Login/index.HTML";
         };
 }
 
