@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/2780876011.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
 </head>
 
 <body>
@@ -49,7 +50,7 @@
                     <button class="icon-settings">
                             <!-- <img class="icon" src="./../assets/trocar_de_conta.png"> -->
                             <label class="icon">
-                                <i class="fa-solid fa-gear"></i>                        
+                                <i class="fa-solid fa-camera"></i>                        
                             </label>
                         </button>
                     </a>
@@ -97,20 +98,25 @@
             <ul class="list-navegation">
                 <!-- <h3> Navegação </h3> -->
                 <li class="list-item">
-                    <a href="#">
+                    <a class="now" href="#">
                         Início
                     </a>
                 </li>
                 <li class="list-item">
-                    <a href="#">
+                    <a href="./meusDados.html">
                         Meus dados
                     </a>
                 </li>
                 <li class="list-item">
-                    <a href="#">
+                    <a href="./meusUsuarios/meusUsuarios.html">
                         Meus usuários
                     </a>
-                </li>
+                <!-- </li>
+                <li class="list-item">
+                    <a href="#">
+                        Meus sensores
+                    </a>
+                </li> -->
             </ul>
             <label class="logout">
                 <a href="./../Login/index.HTML">
@@ -139,11 +145,11 @@
                 <div class="selects">
                     <div class="selects-content">
                         <h4> Selecione seus setores </h4>
-                        <select class="select" id="select_setor">
+                        <select class="select" id="select_setor" onchange="selecionarSetor()">
                             <option value="1"> Setor 1 </option>
                             <option value="2"> Setor 2 </option>
                             <option value="3"> Setor 3 </option>
-                            <option value="Todos"> Todos os setores </option>
+                            <!-- <option value="Todos"> Todos os setores </option> -->
                         </select>
                     </div>
                     <div class="selects-content">
@@ -192,7 +198,7 @@
             </div>
         </div>
     </div>
-<script src="./js/chartConfig.js"></script>
-<script src="./js/chart.js"></script>
+    <script src="./js/chartConfig.js"></script>
+    <script src="./js/chart.js"></script>
 </body>
 </html>
