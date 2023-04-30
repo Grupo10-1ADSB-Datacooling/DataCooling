@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  
+}
+
+body {
+    font-size: 100;
+    background: linear-gradient(to bottom, #c2f1f1, #299296);
+    overflow: scroll;
+    height: 162vh;
+}
+
+header img {
+    margin-left: 3vh;
+    margin-top: 3.0vh;
+    height: 3.5vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 60.56px;
+    width: 1342px;
+    background-color: rgba(55, 193, 202, 1);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 50%;
+    gap: 10vh;
+    font-family: Poppins;
+}
+
+header .exitIcon {
+    margin-right: 5vh;
+    height: 5vh;
+    margin-top: 2.5vh;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.calculo {
+    background-color: #37C1CA;
+    height: 430px;
+    width: 400px;
+    font-size: 16px;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+   
+}
+
+.calculo h1 {
+    margin-left: 30px;
+}
+
+.calculo h2 {
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+#faturamento_mensal {
+    margin-left: 85px;
+    width: 50%;
+    height: 30px;
+}
+
+.h22 {
+    margin-left: -25px;
+    margin-top: 20px;
+}
+
+.h24 {
+    margin-left: 45px;
+    margin-top: 20px;
+}
+
+#duração_downtime {
+    margin-left: 105px;
+    width: 50%;
+    height: 30px;
+}
+
+#qtd_servidores {
+    margin-left: 105px;
+    width: 50%;
+    height: 30px;
+}
+
+#qtd_servidores_caidos {
+    margin-left: 70px;
+    width: 50%;
+    height: 30px;
+}
+
+.borda-colorida {
+    border: 2px solid #D3D3D3;
+
+}
+
+button {
+    margin-left: 19.5vh;
+    font-family: Poppins;
+    font-weight: bold;
+    margin-top: 20px;
+    border: #000 0px solid;
+    border-radius: 5px;
+    width: 25vh;
+    height: 35px;
+    background-color: #40E0D0;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.scroll-down-btn:hover {
+    background-color: #4A91A1;
+    cursor: pointer;
+}
+
+.calculo2 {
+    background-color: #37C1CA;
+    height: 430px;
+    width: 400px;
+    font-size: 16px;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    float: left;
+    transform: translateY(-404px);
+    margin-left: 680px;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+
+}
+
+.calculo2 h1 {
+    margin-left: 125px;
+}
+
+.calculo2 h2 {
+    margin-left: 60px;
+    margin-top: 70px;
+}
+
+.calculo2 h4 {
+    margin-left: 60px;
+    margin-top: 70px;
+}
+
+.calculo2 h3 {
+    margin-left: 125px;
+    margin-top: 6px;
+}
+
+footer {
+    bottom: 0;
+    display: flex;
+   align-items: center;
+    height: 60.56px;
+    width: 1344px;
+    margin-left: -110px;
+    background-color: rgba(55, 193, 202, 1);
+    color: #fff;
+}
+footer h4 {
+    margin-left: 450px;
+}
+
+.center {
+    position: relative;
+    left: 450px;
+    transform: translateY(-330px);
+    
+  }
+
+#button2 a {
+    color: #0044ff;
+}
+
+#button3 a {
+    color: #000000;
+}
+
+#button4 a {
+    color: #000000;
+}
+
+#button5 a {
+    color: #000000;
+}
