@@ -1,0 +1,72 @@
+.container .content .informations{
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    width: 80%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .content .informations .informations-title{
+    color: #40E0D0;
+    font-family: 'Nunito Sans';
+    font-size: 2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(64, 224, 208, 0.15);
+}
+
+.container .content .informations .btn-add{
+    cursor: pointer;
+    background-color: #37C1CA;
+    color: #fff;
+    width: 8vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.05);
+    transition: all 0.35s ease-in-out;
+    font-size: 0.8vw;
+}
+
+.container .content .informations .btn-add:hover{
+    background-color: #000;
+}
+
+.container .content .data-client{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container .content .data-client .list-data-client{
+    list-style: none;
+}
+
+.container .content .data-client .list-data-client .list-item{
+    width: 90%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
+    margin-top: 1vh;
+    padding: 2vh 0vh 0vh 2vh;  
+}
+
+.container .content .data-client .list-data-client .list-item .title-data, .subtitle.data{
+    font-size: 1vw;
+}
+
+.container .content .data-client .list-data-client .list-item .title-data{
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.container .content .data-client .list-data-client .list-item .subtitle-data{
+    font-weight: 500;
+    color: #fff;
+}

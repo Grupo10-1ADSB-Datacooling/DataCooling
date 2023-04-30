@@ -267,7 +267,7 @@ header nav .logout a .logout-button:hover{
     align-items: center;
 }
 
-.container .content .client-informations .status-datacenter h4, .status-datacenter span{
+.container .content .client-informations .status-datacenter h4{
     font-size: 1.3vw;
     font-family: 'Nunito Sans';
     color: #40E0D0;
