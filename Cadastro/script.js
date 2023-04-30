@@ -77,7 +77,12 @@ function alterarCampos() {
             cep = ipt_cep.value;
             telefoneFixo = ipt_telFixo.value;
 
-            window.location.href = "./../Login/index.HTML";
+            if(cnpj == '' || cep == '' || telefoneFixo == ''){
+                alert('Preencha os campos!');
+            } else{
+                alert('Cadastro realizado com sucesso!')
+                window.location.href = "./../Login/index.HTML";
+            }
         };
 }
 
