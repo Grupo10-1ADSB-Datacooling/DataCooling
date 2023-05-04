@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
     <script src="./../js/loading.js"></script>
     <title> Meus Dados - DataCooling </title>
 </head>
+
 <body onload="exibirLoader(500, './../../loading.css', './../../assets/datacooling.png')">
     <header>
         <nav>
@@ -72,14 +74,16 @@
         <div class="content">
             <div class="informations">
                 <h1 class="informations-title"> Meus dados </h1>
-                <button class="btn-add">
-                    <label class="icon">
-                        <i class="fa-solid fa-pen"></i>
-                    </label>
-                    <span class="text-button">
-                        Editar
-                    </span>
-                </button>
+                <a href="editarDados.html">
+                    <button class="btn-add">
+                        <label class="icon">
+                            <i class="fa-solid fa-pen"></i>
+                        </label>
+                        <span class="text-button">
+                            Editar
+                        </span>
+                    </button>
+                </a>
             </div>
             <div class="data-client">
                 <ul class="list-data-client">
@@ -116,4 +120,5 @@
         </div>
     </div>
 </body>
+
 </html>
