@@ -76,14 +76,12 @@ function alterarCampos() {
             cnpj = ipt_cnpj.value;
             cep = ipt_cep.value;
             telefoneFixo = ipt_telFixo.value;
-        if ( razaoSocial == "AquaTech" &&  email == "angelo.gustavo@aquatech.com" && senha == "#At01231000" && cnpj == "30004023000333" && cep == "01835099" && telefoneFixo == "11950042579"){
-            window.location.href = "../Login/index.HTML";
-        }else if (razaoSocial == "DataCooling" && email == "dadinho.junior@datacooling.com" && senha == "#Dc001231000" && cnpj == "30004023000111" && cep == "01234567" && telefoneFixo == "11940028922") {
-            window.location.href = "../Login/index.HTML"
-        }else if (razaoSocial == "NoraxTech" && email == "alessandra.matias@noraxtech.com" && senha == "#Nt01231000" && cnpj == "30004023000222" && cep == "02534678" && telefoneFixo == "11920042298"){
-            window.location.href = "../Login/index.HTML"
+        if ( razaoSocial == "" &&  email == "" && senha == "" && cnpj == "" && cep == "" && telefoneFixo == ""){
+            alert("Por favor, preencher todos os campos!");
+        }else if (razaoSocial != "Bambam Datacenter" && email != "admin@bambam.datacenter" && senha != "#Kb123" && cnpj != "42328097000110" && cep != "03778-292" && telefoneFixo != "1138202990"){
+            alert("Dados inseridos inválidos. Por favor verificar os dados inseridos!")
         }else {
-            alert("Dados inválidos! Verifique os dados inseridos.")
+            window.location.href = "../Login/index.HTML"
         }
             
 
