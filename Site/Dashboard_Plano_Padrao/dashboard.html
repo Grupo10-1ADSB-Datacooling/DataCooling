@@ -7,14 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./../assets/logo_datacooling.png" type="image/x-icon">
-    <title> Dashboard - DataCooling</title>
     <script src="https://kit.fontawesome.com/2780876011.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title> Dashboard - DataCooling</title>
     <!-- <script src="./js/script.js"></script> -->
 </head>
+<!-- <script type="text/javascript">
+    window.onload = function (){
+        window.addEventListener("onload", function() {
+            $('#body').hide();
+            $('#loader').show();
+        });
+        setTimeout(function () {
+           $('#loader').hide();
+           $('#body').show();
+        }, 2500);
+    }
+</script> -->
+<!-- <script>
+    function teste(){
+        document.getElementById('loading').style.display = 'none'
+        document.getElementById('header').style.display = 'flex'
+        document.getElementById('div_container').style.display = 'flex'
 
-<body>
+    }
+
+    function loader(){
+        document.getElementById('header').style.display = 'none'
+        document.getElementById('div_container').style.display = 'none'
+
+        setTimeout(teste, 3500);
+    }
+
+</script> -->
+<script>
+    // document.onload = 'verificar()';
+
+    // function verificar(){
+    //     if(historico == undefined){
+    //         exibirLoader(2000, './../loading.css', './../assets/datacooling.png')
+    //         console.log('Delay maior')
+    //     } else {
+    //         exibirLoader(300, './../loading.css', './../assets/datacooling.png')
+    //         console.log('Delay menor')
+
+    //     }
+    // }
+</script>
+<body onload="exibirLoader(1000, './../loading.css', './../assets/datacooling.png')"> 
+    <!-- <img id="loader" style="width: 14vw;"
+    src="./../../datacooling.svg"
+    class="ld ld-fade"
+  /> -->
     <!-- <header>
         <nav>
             <div class="logo">
@@ -38,19 +83,19 @@
     <header>
         <nav>
             <!-- <div class="logo">
-                <span> 
-                    By: 
+                <span>
+                    By:
                     <h1> DataCooling </h1>
                 </span>
             </div> -->
             <div class="informations-profile">
                 <div class="img-profile">
-                    <img class="img-client" src="https://st.depositphotos.com/1032561/1294/i/450/depositphotos_12940007-stock-photo-profile-view-of-young-man.jpg">
+                    <img class="img-client" src="./../assets/kleber.png">
                     <a href="./settings.html">
                     <button class="icon-settings">
                             <!-- <img class="icon" src="./../assets/trocar_de_conta.png"> -->
                             <label class="icon">
-                                <i class="fa-solid fa-camera"></i>                        
+                                <i class="fa-solid fa-camera"></i>
                             </label>
                         </button>
                     </a>
@@ -69,7 +114,7 @@
                         Fevereiro
                     </a>
                 </li>
-                
+
                 <li class="list-item">
                     <a href="#">
                         Março
@@ -88,7 +133,7 @@
                         Setor 2
                     </a>
                 </li>
-                
+
                 <li class="list-item">
                     <a href="#">
                         Setor 3
@@ -97,13 +142,13 @@
             </ul> -->
             <ul class="list-navegation">
                 <!-- <h3> Navegação </h3> -->
-                <li class="list-item">
-                    <a class="now" href="#">
+                <li class="list-item-now">
+                    <a href="#">
                         Início
                     </a>
                 </li>
                 <li class="list-item">
-                    <a href="./meusDados.html">
+                    <a href="./meusDados/meusDados.html">
                         Meus dados
                     </a>
                 </li>
@@ -111,12 +156,12 @@
                     <a href="./meusUsuarios/meusUsuarios.html">
                         Meus usuários
                     </a>
-                <!-- </li>
+                </li>
                 <li class="list-item">
-                    <a href="#">
+                    <a href="./meusSensores/meusSensores.html">
                         Meus sensores
                     </a>
-                </li> -->
+                </li>
             </ul>
             <label class="logout">
                 <a href="./../Login/index.HTML">
@@ -146,10 +191,11 @@
                     <div class="selects-content">
                         <h4> Selecione seus setores </h4>
                         <select class="select" id="select_setor" onchange="selecionarSetor()">
-                            <option value="1"> Setor 1 </option>
-                            <option value="2"> Setor 2 </option>
-                            <option value="3"> Setor 3 </option>
-                            <!-- <option value="Todos"> Todos os setores </option> -->
+                            <option value="A"> Setor A </option>
+                            <option value="B"> Setor B </option>
+                            <option value="C"> Setor C </option>
+                            <option value="D"> Setor D </option>
+                            <option value="Todos"> Todos os setores </option>
                         </select>
                     </div>
                     <div class="selects-content">
@@ -200,5 +246,7 @@
     </div>
     <script src="./js/chartConfig.js"></script>
     <script src="./js/chart.js"></script>
+    <script src="./js/loading.js" type="text/javascript"></script>
+
 </body>
 </html>

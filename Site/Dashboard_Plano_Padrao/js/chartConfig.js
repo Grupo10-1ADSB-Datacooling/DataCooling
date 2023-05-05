@@ -56,8 +56,8 @@ var corAcimaIdeal = '#FF1A22';
         labels: labels,
         datasets: [{
             label: 'Temperatura',
-            borderColor: '#ff1A22',
-            data: [30, 29, 28, 25, 22, 33],
+            borderColor: `${corAcimaIdeal}`,
+            data: [26, 26, 27, 28, 29, 31],
         }]
     };
     
@@ -65,7 +65,7 @@ var corAcimaIdeal = '#FF1A22';
         labels: labels,
         datasets: [{
             label: 'Umidade',
-            borderColor: '#5E4DCD',
+            borderColor: `${corIdeal}`,
             data: [46, 44, 45, 47, 48, 47],
         }]
     };

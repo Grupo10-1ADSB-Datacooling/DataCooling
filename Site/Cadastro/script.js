@@ -85,7 +85,16 @@ function alterarCampos() {
         }
             
 
+<<<<<<< HEAD:Cadastro/script.js
+            if(cnpj == '' || cep == '' || telefoneFixo == ''){
+                alert('Preencha os campos!');
+            } else{
+                alert('Cadastro realizado com sucesso!')
+                window.location.href = "./../Login/index.HTML";
+            }
+=======
             
+>>>>>>> 9b02be4516e6cd968193c747719968958ffd26e5:Site/Cadastro/script.js
         };
 }
 
