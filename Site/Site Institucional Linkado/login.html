@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style(3).CSS">
+    <script src="./scriptLogin.js"></script>
     <title> Login - DataCooling</title>
 </head>
 <body>
@@ -27,20 +28,24 @@
                             <h4 class="form-title" id="title_senha"> Senha </h4>
                             <input class="form-input" id="ipt_senha" type="password" placeholder="Insira a sua senha">
                         </div>
-                        
+                        <!-- <div class="form-item">
+                            <span class="form-login-incorrect">
+                                Email ou Senha incorretos.
+                            </span>
+                        </div> -->
                         <div class="form-item">
 
-                            <button class="form-button" id="btn_continuar" onclick="exibirCadastroParte2()"> Entrar </button>
+                            <button class="form-button" id="btn_continuar" onclick="validarEntrada()"> Entrar </button>
                         </div>
                     </div>
                     <div class="redirect">
-                        Não possui uma conta? <a href="cadastro.html"> Cadastre-se </a>
+                        Não possui uma conta? <a href="../Cadastro/ca"> Cadastre-se </a>
                     </div>
                 </div>
             </div>
             <div class="card-data-cooling">
                 <h1 class="data-cooling-text"> 
-                   <a href="Site.html" style="color: #Ffff; text-decoration: none;">Data Cooling</a>
+                    Data Cooling
                 </h1>
             </div>
         </div>

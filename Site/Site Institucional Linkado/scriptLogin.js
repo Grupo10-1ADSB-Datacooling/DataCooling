@@ -9,6 +9,6 @@ function validarEntrada() {
     } else if ( email != "admin@bambam.datacenter" && senha != "#Kb0123"){
         alert("Email ou senha inválido.")
     }else {
-        window.location.href = "../Dashboard_Plano_Padrao/dashboard.html"
+        window.location.href = "Dashboard_Plano_Padrao/dashboard.html"
     }
 };

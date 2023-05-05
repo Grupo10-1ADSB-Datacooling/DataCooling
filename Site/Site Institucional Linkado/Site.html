@@ -14,7 +14,6 @@
         <nav>
             <a href="#planos" style="color: #Ffff";>Planos</a>
             <a href="#contato" style="color: #Ffff";>Contato</a>
-            <a href="calculadora.html" style="color: #Ffff";>Simular</a>
         </nav>
         <a href="login.html"><img class="exitIcon" src="./img/EXIT-ICON.png" alt=""></a>
     </header>
@@ -29,11 +28,8 @@
                 <img class="imgServer" src="./img/serves-draw.png" alt="">
                 <img class="imgDadin" src="./img/POSE1 1.png" alt="">
             </div>
-            <a href="#sobrenos">
-                <button class="button-vamos-la">
-                    Vamos-lá
-                </button>
-            </a>
+        <button class="button-vamos-la" onclick="">
+            <a href="#sobrenos" style="color: #Ffff";>Vamos-lá</button></a>
         </div>
 
         <div class="sobre-nos" id="sobrenos">
@@ -88,37 +84,37 @@
             </span>
         </div>
 
-        <button class="button-como-funciona " onclick="">SAIBA MAIS</button>
+        <button class="button-como-funciona " onclick=""><a href="SobreSensor.pdf" style="color: #Ffff";>SAIBA MAIS</button></a>
             <h1 class="planos-title" id="planos">CONHEÇA NOSSOS PLANOS</h1>
             <div class="planos">
             <div class="planos-content">
               <div class="box">
-                <div class="mes-gratis">1 mês grátis!</div>
+                <div class="mes-gratis" style="color: #Ffff";>Contém anunciantes</div>
                 <span class="plano-title">Basic</span><br>
                 <span class="plano-text">Plano Basic oferece monitoramento<br>24 horas do seu datacenter através<br>de até dois sensores na planta de<br>seu datacenter, com acesso a dois<br>gráficos do status da sala</span><br>
                 <br><span class="plano-preço">R$779,99</span><br>
-                <br><button class="assinatura-box">Assinatura Mensal</button><br>
-                <button class="assinatura-box">Assinatura Anual</button> 
+                <br><button class="assinatura-box"><a href="cadastro.html" style="color: #Ffff";>Assinatura Mensal</button></a><br>
+                <button class="assinatura-box"><a href="cadastro.html"  style="color: #Ffff";>Assinatura Anual</button></a> 
               </div>  
             </div>
             <div class="planos-content">
               <div class="box">
-                <div class="mes-gratis">1 mês grátis!</div>
+                <div class="mes-gratis" style="color: #Ffff";>1 mês grátis!</div>
                 <span class="plano-title">Padrão</span><br>
                 <span class="plano-text">Plano Padrão oferece monitoramento<br>24 horas do seu datacenter através<br>de até quatro sensores na planta de<br>seu datacenter, com acesso de três<br>gráficos do status da sala</span><br>
                 <br><span class="plano-preço">R$1559,99</span><br>
-                <br><button class="assinatura-box">Assinatura Mensal</button><br>
-                <button class="assinatura-box">Assinatura Anual</button> 
+                <br><button class="assinatura-box" style="color: #Ffff";><a href="cadastro.html" style="color: #Ffff";>Assinatura Mensal</button></a><br>
+                <button class="assinatura-box" style="color: #Ffff";><a href="cadastro.html" style="color: #Ffff";>Assinatura Anual</button></a> 
               </div>  
             </div>
             <div class="planos-content">
               <div class="box">
-                <div class="mes-gratis">1 mês grátis!</div>
+                <div class="mes-gratis" style="color: #Ffff";>1 mês grátis!</div>
                 <span class="plano-title">Premium</span><br>
                 <span class="plano-text">Plano Premium oferece monitoramento<br>24 horas do seu datacenter através de<br>sensores ilimitados na planta de seu<br>datacenter, com acesso três gráficos do<br>status da sala e análise personalizada<br>da planta com mapa de calor</span><br>
                 <br><span class="plano-preço">R$2999,99</span><br>
-                <br><button class="assinatura-box">Assinatura Mensal</button><br>
-                <button class="assinatura-box">Assinatura Anual</button> 
+                <br><button class="assinatura-box" style="color: #Ffff";><a href="cadastro.html" style="color: #Ffff";>Assinatura Mensal</button></a><br>
+                <button class="assinatura-box" style="color: #Ffff";><a href="cadastro.html" style="color: #Ffff";>Assinatura Anual</button></a> 
               </div>  
             </div>
         </div>
@@ -269,9 +265,10 @@
         <div class="suport" id="contato">
             <h1 class="suport-title">CONTATO</h1>
             <div class="suport-content">
-                <img src="./img/profile-icon.png" alt=""><input type="text" name="text" class="input" placeholder="seu nome"><br>
-                <img src="./img/email-icon.png" alt=""><input type="text" name="text" class="input" placeholder="seu email"><br>
-                <img src="./img/question-icon.png" alt=""><input type="text" name="text" class="input" placeholder="sua duvida">
+                <input type="text" name="text" class="input_s" placeholder="Nome."><br>
+                <input type="text" name="text" class="input_s" placeholder="Email."><br>
+                <input type="text" name="text" class="input_s" id="mande_mensagem" placeholder="Mande uma mensagem para nós.">
+                <button onclick="">Enviar</button>
             </div>
         </div>
 
@@ -304,8 +301,5 @@
 </body>
 </html>
 <script>
-    function botaoVamosLa(){
-        
-    }
 </script>
                     

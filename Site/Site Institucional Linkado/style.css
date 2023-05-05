@@ -30,6 +30,7 @@ header {
     background-color: rgba(55, 193, 202, 1);
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
     position: fixed;
+    z-index: 9999;
 }
 
 header nav {
@@ -343,7 +344,6 @@ main div .button-vamos-la {
 
 .splider::before {
     position: absolute;
-    z-index: 1;
     left: 0;
     content: "";
     width: 23.958%;
