@@ -76,12 +76,13 @@ function alterarCampos() {
         cnpj = ipt_cnpj.value;
         cep = ipt_cep.value;
         telefoneFixo = ipt_telFixo.value;
-        if (cnpj == "" && cep == "" && telefoneFixo == "") {
+        if (cnpj == "" || cep == "" || telefoneFixo == "") {
             alert("Por favor, preencher todos os campos!");
-        } else if (cnpj != "42328097000110" && cep != "03778-292" && telefoneFixo != "1138202990") {
+        } else if (cnpj != "42328097000110" || cep != "03778-292" || telefoneFixo != "1138202990") {
             alert("Dados inseridos inválidos. Por favor verificar os dados inseridos!")
         } else {
-            window.location.href = "../Login/index.HTML"
+            alert ("Cadastro concluído com sucesso!")
+            window.location.href = "./login.html"
         }
 
 
@@ -93,9 +94,9 @@ function exibirCadastroParte2() {
     razaoSocial = ipt_razaoSocial.value;
     email = ipt_email.value;
     senha = ipt_senha.value;
-    if (razaoSocial == "" && email == "" && senha == "") {
+    if (razaoSocial == "" || email == "" || senha == "") {
         alert("Por favor, preencher todos os campos!");
-    } else  if (razaoSocial != "Bambam Datacenter" && email != "admin@bambam.datacenter" && senha != "#Kb123"){
+    } else  if (razaoSocial != "Bambam Datacenter" || email != "admin@bambam.datacenter" || senha != "#Kb0123"){
         alert("Dados inseridos inválidos. Por favor verificar os dados inseridos!")
     }else {
         alterarCampos();

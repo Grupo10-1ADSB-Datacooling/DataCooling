@@ -6,94 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="DataCooling\Site\Site Institucional Linkado\assets" type="image/x-icon">
+    <link rel="shortcut icon" href="./../assets/logo_datacooling.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/2780876011.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/charts.js"></script>
+    <script src="./js/loading.js" type="text/javascript"></script>
     <title> Dashboard - DataCooling</title>
-    <!-- <script src="./js/script.js"></script> -->
 </head>
-<!-- <script type="text/javascript">
-    window.onload = function (){
-        window.addEventListener("onload", function() {
-            $('#body').hide();
-            $('#loader').show();
-        });
-        setTimeout(function () {
-           $('#loader').hide();
-           $('#body').show();
-        }, 2500);
-    }
-</script> -->
-<!-- <script>
-    function teste(){
-        document.getElementById('loading').style.display = 'none'
-        document.getElementById('header').style.display = 'flex'
-        document.getElementById('div_container').style.display = 'flex'
-
-    }
-
-    function loader(){
-        document.getElementById('header').style.display = 'none'
-        document.getElementById('div_container').style.display = 'none'
-
-        setTimeout(teste, 3500);
-    }
-
-</script> -->
-<script>
-    // document.onload = 'verificar()';
-
-    // function verificar(){
-    //     if(historico == undefined){
-    //         exibirLoader(2000, './../loading.css', './../assets/datacooling.png')
-    //         console.log('Delay maior')
-    //     } else {
-    //         exibirLoader(300, './../loading.css', './../assets/datacooling.png')
-    //         console.log('Delay menor')
-
-    //     }
-    // }
-</script>
 <body onload="exibirLoader(1000, './../loading.css', './../assets/datacooling.png')"> 
-    <!-- <img id="loader" style="width: 14vw;"
-    src="./../../datacooling.svg"
-    class="ld ld-fade"
-  /> -->
-    <!-- <header>
-        <nav>
-            <div class="logo">
-                <h2> DataCooling </h2>
-            </div>
-            <ul class="list">
-                <li class="list-item">
-                    <span class="text">
-                        Suporte
-                    </span>
-                </li>
-                <li class="list-item">
-                    <img src="./img/perfil.png">
-                    <label class="icon">
-                        <i class="fa-solid fa-caret-down"></i>
-                    </label>
-                </li>
-            </ul>
-        </nav>
-    </header> -->
     <header>
         <nav>
-            <!-- <div class="logo">
-                <span>
-                    By:
-                    <h1> DataCooling </h1>
-                </span>
-            </div> -->
             <div class="informations-profile">
                 <div class="img-profile">
                     <img class="img-client" src="./../assets/kleber.png">
                     <a href="./settings.html">
                     <button class="icon-settings">
-                            <!-- <img class="icon" src="./../assets/trocar_de_conta.png"> -->
                             <label class="icon">
                                 <i class="fa-solid fa-camera"></i>
                             </label>
@@ -102,46 +30,7 @@
                 </div>
                 <h3> Kleber Bambam</h3>
             </div>
-            <!-- <ul class="list-month">
-                <h3> Mês de Análise </h3>
-                <li class="list-item">
-                    <a href="#">
-                        Janeiro
-                    </a>
-                </li>
-                <li class="list-item">
-                    <a href="#">
-                        Fevereiro
-                    </a>
-                </li>
-
-                <li class="list-item">
-                    <a href="#">
-                        Março
-                    </a>
-                </li>
-            </ul>
-            <ul class="list-setor">
-                <h3> Setor de Análise</h3>
-                <li class="list-item">
-                    <a href="#">
-                        Setor 1
-                    </a>
-                </li>
-                <li class="list-item">
-                    <a href="#">
-                        Setor 2
-                    </a>
-                </li>
-
-                <li class="list-item">
-                    <a href="#">
-                        Setor 3
-                    </a>
-                </li>
-            </ul> -->
             <ul class="list-navegation">
-                <!-- <h3> Navegação </h3> -->
                 <li class="list-item-now">
                     <a href="#">
                         Início
@@ -184,18 +73,19 @@
         <div class="content">
             <div class="client-informations">
                 <div class="status-datacenter">
-                    <h4> Hoje seu DataCenter está: Ideal! </h4>
+                    <h4 id="titleStatus"></h4>
                     <img class="img-status" src="./../assets/dadinho_com_grafico.png">
                 </div>
                 <div class="selects">
                     <div class="selects-content">
                         <h4> Selecione seus setores </h4>
-                        <select class="select" id="select_setor" onchange="selecionarSetor()">
-                            <option value="A"> Setor A </option>
+                        <select class="select" id="select_setor" onchange="gerarGraficos()">
+                            <!-- <option value="null"> Selecione </option> -->
+                            <option value="A" selected> Setor A </option>
                             <option value="B"> Setor B </option>
                             <option value="C"> Setor C </option>
                             <option value="D"> Setor D </option>
-                            <option value="Todos"> Todos os setores </option>
+                            <!-- <option value="Todos"> Todos os setores </option> -->
                         </select>
                     </div>
                     <div class="selects-content">
@@ -204,49 +94,8 @@
                     </div>
                 </div>
             </div>
-            <div class="dashboard">
-                <div class="line">
-                    <div class="line-chart">
-                        <div class="title">
-                            <h4> Temperatura </h4>
-                        </div>
-                        <div class="chart">
-                            <canvas id="chartTemperature"></canvas>
-                        </div>
-                    </div>
-                    <div class="line-chart">
-                        <div class="title">
-                            <h4> Umidade </h4>
-                        </div>
-                        <div class="chart">
-                            <canvas id="chartHumidity"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="donut">
-                    <div class="donut-chart">
-                        <div class="title">
-                            <h4> Média da Temperatura</h4>
-                        </div>
-                        <div class="chart">
-                            <canvas class="chart-item" id="chartMediaTemperature"></canvas>
-                        </div>
-                    </div>
-                    <div class="donut-chart">
-                        <div class="title">
-                            <h4> Média da Umidade</h4>
-                        </div>
-                        <div class="chart">
-                            <canvas class="chart-item" id="chartMediaHumidity"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="dashboard"></div>
         </div>
     </div>
-    <script src="./js/chartConfig.js"></script>
-    <script src="./js/chart.js"></script>
-    <script src="./js/loading.js" type="text/javascript"></script>
-
 </body>
 </html>
