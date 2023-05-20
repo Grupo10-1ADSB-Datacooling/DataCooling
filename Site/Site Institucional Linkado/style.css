@@ -37,11 +37,13 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-left: 50%;
+    margin-top: 0.8vh;
+    margin-left: 70%;
     gap: 10vh;
     font-family: Poppins;
     position: fixed;
 }
+
 
 header .exitIcon {
     margin-right: 3vh;
