@@ -37,13 +37,11 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 0.8vh;
-    margin-left: 70%;
+    margin-left: 50%;
     gap: 10vh;
     font-family: Poppins;
     position: fixed;
 }
-
 
 header .exitIcon {
     margin-right: 3vh;
@@ -504,6 +502,10 @@ main div .button-vamos-la {
     padding-bottom: 15vh;
 }
 
+body .suporte{
+    display: flex;
+    justify-content: center;
+}
 
 .suport-content button {
     margin-left: 0;
