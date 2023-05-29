@@ -80,3 +80,26 @@ function exibirDadosUsuario(){
     inputSenha.value = senha;
     selectCargo.value = cargo;
 }
+
+
+function gerarStringAleatoria() {
+    var stringAleatoria = '';
+    var caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+    for (var i = 0; i < 30; i++){
+        stringAleatoria += caracteres.charAt(Math.floor(Math.random()* caracteres.length));
+    }
+
+    mensagem.innerHTML = `<input id="a" value="${stringAleatoria}" style="width: 38vh;" readonly class="ipt_token">`
+    btn_copiar.innerHTML = `<button onclick="copiar()" class="copy_bnt" readonly >Copiar</button>`
+    return stringAleatoria;
+}
+
+function copiar() {
+    var  b = document.getElementById("a").select();
+    if(!(document.execCommand("paste"))){
+        alert(b)
+        document.execCommand("copy")
+        mensagem.innerHTML += `<br><span style="color: #0bcd4d;">Token copiado.</span>`
+    } 
+}

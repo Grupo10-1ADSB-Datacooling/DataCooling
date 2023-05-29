@@ -1,7 +1,7 @@
 var corAbaixoIdeal = '#FF7B29';
 var corIdeal = '#0BCD4D';
-var corAcimaIdeal = '#FF1A22';
-var corAlerta = '#FFFF00';
+var corAcimaIdeal = '#FF3C3C';
+var corAlerta = '#FFFA55';
 var corManutencao = '#7D7D7D';
 
 var dashboardContent = 
