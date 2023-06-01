@@ -14,11 +14,11 @@
     <div class="container">
         <div class="content">
             <div class="card-sign-up">
-                <button class="botao_voltar">
+                <button class="botao_voltar" onclick="history.back()">
                     <div class="icon">
                         <img src="./assets/seta-esquerda-teste.png" alt="" style="width: 6vh;">
                     </div>
-                    <div class="text">Voltar</div>
+                    <div class="text"> Voltar</div>
                 </button>
                 <div class="content-sign-up">
                     <div class="sign-up-informations">
@@ -29,22 +29,26 @@
                     </div>
                     <div class="form-sign-up">
                         <div class="form-item">
-                            <h4 class="form-title" id="title_razaoSocial"> Razão Social </h4>
-                            <input class="form-input" id="ipt_razaoSocial" placeholder="Sua empresa" type="text">
+                            <h4 class="form-title"> Nome </h4>
+                            <input class="form-input" id="ipt_nome" placeholder="Nome" type="text">
                         </div>
                         <div class="form-item">
-                            <h4 class="form-title" id="title_email"> Email da Empresa </h4>
-                            <input class="form-input" id="ipt_email" type="email" placeholder="Seu email corporativo">
+                            <h4 class="form-title"> Sobrenome </h4>
+                            <input class="form-input" id="ipt_sobrenome" placeholder="Sobrenome" type="text">
                         </div>
                         <div class="form-item">
-                            <h4 class="form-title" id="title_senha"> Senha </h4>
+                            <h4 class="form-title"> Email </h4>
+                            <input class="form-input" id="ipt_email" placeholder="Seu email corporativo" type="text">
+                        </div>
+                        <div class="form-item">
+                            <h4 class="form-title"> Senha </h4>
                             <input class="form-input" id="ipt_senha" type="password" placeholder="Sua senha">
+                            <input type="checkbox" onclick="mostrarOcultarSenha()"> <span>Mostrar senha</span>
                         </div>
 
                         <div class="form-item">
 
-                            <button class="form-button" id="btn_continuar" onclick="exibirCadastroParte2()"> Continuar
-                            </button>
+                            <button class="form-button" onclick="cadastrarEmpresa()"> Continuar </button>
                         </div>
                     </div>
                     <div class="redirect">
